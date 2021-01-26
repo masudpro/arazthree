@@ -1,0 +1,705 @@
+ html {
+     scroll-behavior: smooth;
+}
+ body {
+     font-family: "Poppins", sans-serif !important;
+     background-color: #0f141b !important;
+     color: #ffffff !important;
+     padding: 0px;
+     scroll-behavior: smooth;
+}
+ button, a {
+     cursor: pointer;
+}
+ a {
+     text-decoration: none !important;
+}
+ a:hover {
+     text-decoration: none !important;
+}
+ ul {
+     margin: 0px;
+     padding: 0px;
+}
+ li {
+     list-style: none;
+}
+ button:focus {
+     outline: dotted 0px !important;
+}
+/* Header Section Start */
+ header {
+     text-align: center;
+     width: 100%;
+     background: url("image/banner.png");
+     background-repeat: no-repeat;
+     background-size: contain;
+     position: relative;
+     height: 500px;
+}
+ header::before {
+     content: "";
+     position: absolute;
+     top: 0px;
+     right: 0px;
+     width: 100%;
+     height: 500px;
+     background: -webkit-gradient(linear, left bottom, left top, color-stop(7.65%, #0f141b), to(rgba(28, 36, 49, 0)));
+     background: -o-linear-gradient(bottom, #0f141b 7.65%, rgba(28, 36, 49, 0) 100%);
+     background: linear-gradient(360deg, #0f141b 7.65%, rgba(28, 36, 49, 0) 100%);
+}
+ .banner {
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     width: 100%;
+     height: 420px;
+     z-index: 9999;
+}
+ .custom-nav {
+     background: rgba(28, 36, 49, 0.75);
+     -webkit-backdrop-filter: blur(4px);
+     backdrop-filter: blur(4px);
+     height: 60px;
+}
+ .navbar-brand {
+     color: #3ac571;
+     font-weight: 900;
+     font-size: 25px;
+}
+ .navbar-brand:hover {
+     color: #3ac571;
+     font-weight: 900;
+     font-size: 25px;
+}
+ .navbar-brand span {
+     color: #ffffff;
+}
+ .custom-nav ul li {
+     float: left;
+     list-style: none;
+     padding-top: 0px !important;
+}
+ .custom-nav ul li a {
+     color: #ffffff;
+     font-weight: semi-bold;
+     font-size: 18px;
+     padding: 0px 30px !important;
+}
+ .bannerTopHeading {
+     width: 100%;
+}
+ .bannerTopHeading h1 {
+     padding-top: 150px;
+     color: #ffffff;
+     text-shadow: 0px 0px 22px rgba(255, 255, 255, 0.25);
+     font-weight: 900;
+     font-size: 48px;
+     line-height: 72px;
+     z-index: 9999;
+}
+ .bannerTopHeading h4 {
+     color: #3ac571;
+}
+ .bannerGoIcon {
+     width: 31px;
+     height: 55px;
+     opacity: 1;
+     margin: 50px auto;
+     overflow: hidden;
+}
+ .bannerGoIcon img {
+     height: 25px;
+     width: 25px;
+     color: #ffffff;
+     -webkit-animation-name: goIcon;
+     animation-name: goIcon;
+     -webkit-animation-iteration-count: infinite;
+     animation-iteration-count: infinite;
+     -webkit-animation-duration: 3s;
+     animation-duration: 3s;
+     font-weight: 100;
+}
+ @-webkit-keyframes goIcon {
+     0% {
+         margin-top: 0px;
+    }
+     50% {
+         margin-top: 30px;
+    }
+}
+ @keyframes goIcon {
+     0% {
+         margin-top: 0px;
+    }
+     50% {
+         margin-top: 30px;
+    }
+}
+/* Game List Section Start */
+ .topListTitle h1{
+     font-size: 32px;
+     font-weight: 900;
+     line-height: 48px;
+}
+ .bricklayer {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-align: start;
+     -webkit-align-items: flex-start;
+     -ms-flex-align: start;
+     align-items: flex-start;
+     -webkit-box-pack: center;
+     -webkit-justify-content: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-flex-wrap: wrap;
+     -ms-flex-wrap: wrap;
+     flex-wrap: wrap;
+}
+ .bricklayer-column-sizer {
+     width: 33.3%;
+     display: none;
+}
+ .bricklayer-column {
+     -webkit-box-flex: 1;
+     -webkit-flex: 1;
+     -ms-flex: 1;
+     flex: 1;
+     padding-left: 5px;
+     padding-right: 5px;
+}
+ .bricklayer-column >div{
+     padding: 10px;
+}
+ .gameList {
+     margin-left: auto;
+     margin-right: auto;
+     max-width: 1400px;
+     padding: 50px;
+}
+ .game {
+     background: #1c2431 !important;
+     border-radius: 9px;
+    /* display: block;
+     */
+}
+ .game h4 {
+     padding-top: 10px;
+     padding-bottom: 10px;
+}
+ .scorePart {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     padding: 10px;
+}
+ .rankNumber {
+     font-weight: bold;
+     font-size: 13px;
+     line-height: 21px;
+     text-align: center;
+     background: #3ac571;
+     border-radius: 5px;
+     color: #ffffff;
+     padding: 3px 10px;
+}
+ .rateScore {
+     font-weight: bold;
+     font-size: 13px;
+     line-height: 21px;
+     border-radius: 5px;
+     color: #ffffff;
+     margin-left: auto;
+}
+ .rateScore span {
+     margin-left: 10px;
+     background: rgba(255, 255, 255, 0.08);
+     border-radius: 5px;
+     padding: 2px 10px;
+}
+ .gameInfo {
+     min-height: 160px;
+}
+ .gameImg {
+     height: 190px;
+     line-height: 190px;
+     text-align: center;
+}
+ .luckLandImg {
+     background: #f4213a;
+}
+ .casoolaImg {
+     background: #ec3b23;
+}
+ .tornadImg {
+     background: #ffffff;
+}
+ .leevegasImg {
+     background: #ffa41d;
+}
+ .katsubetImg {
+     background: #1cae45;
+}
+ .jackporcityImg {
+     background: #0d0d0d;
+}
+ .gameInfo ul {
+     padding: 15px;
+}
+ .gameInfo ul li {
+     font-size: 14px;
+     line-height: 18px;
+     color: #ffffff;
+     list-style: none;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+}
+ .gameInfo ul li i {
+     width: 20px !important;
+     height: 20px !important;
+     border-radius: 100px;
+     background: #2e3641;
+     font-weight: 100 !important;
+     font-size: 12px;
+     line-height: 20px;
+     text-align: center;
+     margin-right: 10px;
+}
+ .gameInfo ul li p {
+     display: block;
+     margin-top: 2px;
+}
+ .openContentBtn {
+     background: #2e3641;
+     border-radius: 120px;
+     border: none;
+     color: #ffffff;
+     padding: 5px 20px;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+     margin: 0 auto;
+     margin-bottom: 20px;
+     width: 150px;
+}
+ .openContentBtn span {
+     margin-right: 10px;
+}
+ .openContentBtn i {
+     font-size: 25px;
+}
+ .toggleBtnClass {
+     margin-top: 10px;
+     margin-bottom: 15px;
+}
+ .toggleBtnClass span {
+     display: none !important;
+}
+ .toggleBtnClass i {
+     -webkit-transform: rotate(180deg) !important;
+     -ms-transform: rotate(180deg) !important;
+     transform: rotate(180deg) !important;
+}
+ .viewContent {
+     padding: 10px;
+     display: none;
+}
+ .viewContent h4 {
+     font-weight: 600;
+     font-size: 17px;
+     line-height: 24px;
+}
+ .gameName {
+     background: rgba(255, 255, 255, 0.08);
+     border-radius: 9px;
+     margin-top: 10px;
+     padding: 10px;
+}
+ .gameName ul {
+}
+ .gameName ul li {
+     font-size: 14px;
+     line-height: 18px;
+     color: #ffffff;
+     list-style: none;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+}
+ .gameName ul li i {
+}
+ .gameName ul li span {
+}
+ .gameName ul li span i {
+     font-weight: 100 !important;
+     font-size: 12px;
+     text-align: center;
+     margin-right: 8px;
+}
+ .gameName ul li p {
+     display: block;
+     margin-top: 2px;
+}
+ .gameName {
+     background: rgba(255, 255, 255, 0.08);
+     border-radius: 9px;
+     margin-top: 15px;
+}
+ .advantages {
+     background: rgba(255, 255, 255, 0.08);
+     border-radius: 9px;
+     margin-top: 15px;
+     padding: 10px;
+}
+ .advantages ul {
+}
+ .advantages ul li {
+     font-size: 14px;
+     line-height: 18px;
+     color: #ffffff;
+     list-style: none;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+}
+ .advantages ul li span {
+    /* font-weight: 100 !important;
+     font-size: 12px;
+     text-align: center;
+     margin-right: 8px;
+     */
+}
+ .advantages ul li span i {
+     width: 20px !important;
+     height: 20px !important;
+     border-radius: 100px;
+     background: #3ac571;
+     font-weight: 100 !important;
+     font-size: 12px;
+     line-height: 20px;
+     text-align: center;
+     margin-right: 10px;
+}
+ .advantages ul li p {
+     display: block;
+     margin-top: 2px;
+     color: #3ac571;
+}
+ .disAdvantages {
+     background: rgba(255, 255, 255, 0.08);
+     border-radius: 9px;
+     margin-top: 15px;
+     padding: 10px;
+}
+ .disAdvantages ul {
+}
+ .disAdvantages ul li {
+     font-size: 14px;
+     line-height: 18px;
+     color: #ffffff;
+     list-style: none;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+}
+ .disAdvantages ul li i {
+}
+ .disAdvantages ul li span {
+}
+ .disAdvantages ul li span i {
+     width: 20px !important;
+     height: 20px !important;
+     border-radius: 100px;
+     background: #f33357;
+     font-weight: 100 !important;
+     font-size: 12px;
+     line-height: 20px;
+     text-align: center;
+     margin-right: 10px;
+}
+ .disAdvantages ul li p {
+     display: block;
+     margin-top: 2px;
+     color: #f33357;
+}
+ .paymentMethod {
+     background: rgba(255, 255, 255, 0.08);
+     border-radius: 9px;
+     margin-top: 15px;
+     padding: 10px;
+}
+ .paymentMethod ul {
+}
+ .paymentMethod ul li {
+     font-size: 14px;
+     line-height: 18px;
+     color: #ffffff;
+     list-style: none;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+}
+ .paymentMethod ul li i {
+}
+ .paymentMethod ul li span {
+}
+ .paymentMethod ul li span i {
+     font-weight: 100 !important;
+     font-size: 12px;
+     line-height: 20px;
+     text-align: center;
+     margin-right: 10px;
+}
+ .paymentMethod ul li p {
+}
+ .gameBonus {
+     text-align: center;
+     padding: 10px;
+     padding-top: 0px;
+}
+ .gameBonus > div {
+     background: rgba(255, 255, 255, 0.08);
+     border-radius: 9px;
+     padding: 20px;
+}
+ .gameBonus .bonusText {
+     font-weight: 600;
+     font-size: 20px;
+     line-height: 30px;
+     text-align: center;
+     margin-bottom: 5px !important;
+}
+ .gameBonus .bonusCode {
+     font-weight: 600;
+     font-size: 20px;
+     text-align: center;
+     color: #3ac571;
+}
+ .bonusButton {
+     display: inline-block;
+     background: #3ac571;
+     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     border-radius: 120px;
+     border: 0px;
+     color: #ffffff;
+     font-style: normal;
+     font-weight: 600;
+     font-size: 16px;
+     line-height: 24px;
+     text-align: center;
+     width: 150px;
+     height: 40px;
+     margin-top: 10px;
+     line-height: 40px;
+     width: 150px;
+     transition: all 0.5s;
+}
+ .bonusButton:hover {
+ -webkit-box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.4);
+     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.4);
+     color: #ffffff;
+}
+/* Game List Section End */
+/* Footer Section Start */
+ footer {
+     text-align: center;
+     width: 100%;
+     background: url("image/banner.png");
+     background-repeat: no-repeat;
+     background-position: bottom;
+     background-size: contain;
+     position: relative;
+     height: 500px;
+}
+ footer::before {
+     content: "";
+     position: absolute;
+     bottom: 0px;
+     right: 0px;
+     width: 100%;
+     height: 500px;
+     background: #0f141bc2;
+}
+ .footerContact {
+     z-index: 9999;
+}
+ .footerContact h1 {
+     padding-top: 200px;
+     font-weight: 900;
+     font-size: 48px;
+     line-height: 72px;
+     color: #ffffff;
+     text-shadow: 0px 0px 22px rgba(255, 255, 255, 0.25);
+}
+ .footerContact h3 {
+     font-weight: 500;
+     font-size: 24px;
+     line-height: 36px;
+     color: #3ac571;
+}
+ .copyRightText {
+     background: #19202b;
+     min-height: 55px;
+     text-align: center;
+}
+ .copyRightText p {
+     padding-top: 20px;
+     font-weight: 500;
+     font-size: 14px;
+}
+/* Css For Responsive */
+ @media (max-width: 1199px) {
+     .bricklayer-column-sizer {
+         width: 50%;
+    }
+     header {
+         background: url("image/banner.png");
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center center;
+         position: relative;
+         height: 500px;
+    }
+     header::before {
+         content: "";
+         position: absolute;
+         top: 0px;
+         right: 0px;
+         width: 100%;
+         height: 500px;
+         background: -webkit-gradient(linear, left bottom, left top, color-stop(7.65%, #0f141b), to(rgba(28, 36, 49, 0)));
+         background: -o-linear-gradient(bottom, #0f141b 7.65%, rgba(28, 36, 49, 0) 100%);
+         background: linear-gradient(360deg, #0f141b 7.65%, rgba(28, 36, 49, 0) 100%);
+    }
+}
+ @media (max-width: 991px) {
+     footer {
+         text-align: center;
+         width: 100%;
+         background: url("image/banner.png");
+         background-repeat: no-repeat;
+         background-position: center center;
+         background-size: cover;
+         position: relative;
+         height: 300px;
+    }
+     footer::before {
+         content: "";
+         position: absolute;
+         bottom: 0px;
+         right: 0px;
+         width: 100%;
+         height: 300px;
+         background: #0f141bc2;
+    }
+     .footerContact h1 {
+         padding-top: 100px;
+    }
+     .bannerTopHeading h1 {
+         padding-top: 150px;
+         font-size: 40px;
+         line-height: 45px;
+         z-index: 9999;
+    }
+}
+ @media (max-width: 900px) {
+     .gameList {
+         padding: 10px;
+    }
+}
+ @media (max-width: 768px) {
+     .gameList {
+         padding: 50px;
+    }
+     .bricklayer-column-sizer {
+         width: 100%;
+    }
+}
+ @media (max-width: 575px) {
+     .gameList {
+         padding: 10px;
+    }
+     .custom-nav {
+         height: 120px;
+         display: -webkit-block;
+         display: -ms-block;
+         display: block;
+    }
+     .banner ul {
+         margin: auto !important;
+         display: inline-block;
+         margin-top: 15px !important;
+    }
+     .custom-nav .navbar-brand {
+         display: -webkit-block;
+         display: -ms-block;
+         display: block;
+         width: 100%;
+         text-align: center;
+    }
+     .bannerTopHeading h1 {
+         padding-top: 100px;
+         font-size: 30px;
+         z-index: 9999;
+    }
+     .topListTitle h1{
+         font-size: 25px;
+         font-weight: 900;
+         line-height: 48px;
+    }
+     .gameBonus .bonusText {
+         font-size: 18px;
+    }
+     .gameBonus .bonusCode {
+         font-size: 18px;
+    }
+     .rankNumber{
+         font-size: 12px;
+         padding: 3px 8px;
+    }
+     .rateScore {
+         font-size: 12px;
+    }
+     .rateScore span {
+         margin-left: 5px;
+    }
+     .footerContact h1 {
+         padding-top: 100px;
+         font-size: 35px;
+         line-height: 40px;
+    }
+     .footerContact h3 {
+         font-size: 20px;
+         line-height: 25px;
+    }
+}
+ @media (max-width: 400px) {
+     .footerContact h1 {
+         font-size: 25px;
+         line-height: 35px;
+    }
+     .footerContact h3 {
+         font-size: 16px;
+         line-height: 20px;
+    }
+     .bannerTopHeading h1{
+         font-size: 25px;
+         line-height: 35px;
+    }
+     .bannerTopHeading h4{
+         font-size: 16px;
+         line-height: 20px;
+    }
+}
+ 
